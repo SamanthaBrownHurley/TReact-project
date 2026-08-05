@@ -1,0 +1,25 @@
+* {font-family: 'Inter', sans-serif;}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+padding: 80px 0;
+}
+
+/* Header */
+.logo {
+  display: flex;
+}
+.nav__links {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav__link {
+  
+}
