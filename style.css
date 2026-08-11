@@ -70,6 +70,7 @@ color: #243e63;
   display: flex;
   align-items: center;
   margin: 10px 0;
+  position: relative;
 }
 
 ul {
@@ -175,6 +176,11 @@ h1 {
   display: block;
 }
 
+h3 {
+  position: absolute;
+  display: block;
+  align-items: left;
+}
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width:768px) {
