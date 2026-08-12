@@ -65,18 +65,26 @@ color: #243e63;
   color: #7342d6
 }
 
+.nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+  padding: 0;
+}
+
 .logo {
   width: 160px;
   display: flex;
   align-items: center;
   justify-content:left;
-  margin-right: 10px 0 0 0;
+  margin: 10px 0 0 0;
   max-height: 100px;
   margin-right: 10px;
 }
 
 .nav__logo--text {
-  display: left;
+  display: flex;
   align-items: left;
   justify-content: left;
 }
