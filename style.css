@@ -56,8 +56,8 @@ color: #243e63;
   max-width: 1200px;
   padding: 0 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -69,16 +69,22 @@ color: #243e63;
   width: 160px;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin-right: 10px 0;
   position: relative;
+  max-height: 100px;
+  margin-right: 10px;
 }
 
 ul {
   display: flex;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 li {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav__links {
@@ -180,6 +186,7 @@ h3 {
   position: absolute;
   display: block;
   align-items: left;
+  margin: 0;
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
