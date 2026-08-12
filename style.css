@@ -69,10 +69,16 @@ color: #243e63;
   width: 160px;
   display: flex;
   align-items: center;
-  margin-right: 10px 0;
-  position: relative;
+  justify-content:left;
+  margin-right: 10px 0 0 0;
   max-height: 100px;
   margin-right: 10px;
+}
+
+.nav__logo--text {
+  display: left;
+  align-items: left;
+  justify-content: left;
 }
 
 ul {
@@ -183,7 +189,6 @@ h1 {
 }
 
 h3 {
-  position: absolute;
   display: block;
   align-items: left;
   margin: 0;
