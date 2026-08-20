@@ -21,19 +21,26 @@ max-width: 100vw;
 overflow-x: hidden;
 }
 
-nav {
+.nav {
   height: 80px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
 }
 
 img { 
-  width: 100%;
-  height: 100%;
+  height: auto;
+  width: auto;
   max-height: 50vh;
-  padding: 20px;
 }
 
 a {
+  display: inline;
   text-decoration: none;
 }
 
@@ -72,21 +79,22 @@ color: #243e63;
 
 .nav__logo {
   display: flex;
-  align-items: center;
   justify-content: left;
-  gap: 8px;
-  padding: 0;
+  margin:8px 0;
+  padding-bottom: 4px;
 }
 
-.logo {
+.nav__logo--img {
   width: 160px;
   display: flex;
   align-items: center;
   justify-content:left;
   margin: 8px 0;
-  padding-bottom: 4px;
+  padding: 20px 4px;
   max-height: 100px;
   margin-left: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .nav__logo--text {
@@ -94,8 +102,9 @@ color: #243e63;
   display: flex;
   align-items: left;
   justify-content: left;
-  margin-left: 12px;
+  margin-right: 12px;
   padding-bottom: 2px;
+  font-weight: bold;
 }
 
 ul {
@@ -118,7 +127,6 @@ padding-top: 4px;
 border-bottom: 2px solid transparent;
 display: flex;
 justify-content: space-between;
-align-items: center;
 }
 
 .nav__link {
@@ -129,12 +137,16 @@ align-items: center;
   align-items: center;
   border-bottom: 2px solid transparent;
   position: relative;
+  font-weight: bold;
   transition: all 300ms ease;
-  underline: purple;
+  margin-left: 20px;
+  margin: 0 24px;
+  padding-top: 4px;
 }
 
 .nav__link:hover {
   text-decoration: underline;
+  color: purple;
 }
 
 .nav__link::after {
@@ -142,6 +154,10 @@ align-items: center;
   background: #6415ff;
   transition: all 300ms ease;
   opacity: 0;
+}
+
+.login {
+  margin-left: 48px;
 }
 
 .nav__link--primary {
@@ -229,7 +245,7 @@ h3 {
   margin: 0;
 }
 
-header .row {
+.header__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,27 +269,69 @@ header .row {
   align-items: center;
 }
 
+.header__email--input {
+  width: 100%;
+  border-radius: 500px;
+  border: 2px solid rgb(229, 231, 235);
+  padding: 20px 200px 20px 32px;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border-color 300ms ease;
+}
+
 .header__email--btn {
   z-index: 2;
   margin: 8px;
-  height: calc(100%-16px);
+  height: calc(100% - 16px);
   border-radius: 500px;
   width: 160px;
   border: none;
   background-color: #6415ff;
   color: #fff;
   font-size: 16px;
+  font-weight: bold;
+  position: relative;
   transition: all 300ms ease;
+}
+
+.button {
+  cursor: pointer;
 }
 
 .header__customers--title {
   margin-top: 80px;
   color: #a0aec0;
   font-size: 12px;
+  font-weight: bold;
+}
+
+.header__customers {
+  margin-top: 16px;
+  padding-right: 64px;
+  opacity: 50%;
+  width: 75%;
+}
+
+.header__img--wrapper {
+ display: flex;
+ justify-content: flex-end;
+ width: calc(100%-40%);
+}
+
+.header__img {
+  width: 100%;
+  max-width: 512px;
 }
 
 .section {
   padding: 0 32px;
+}
+
+.section__features {
+  position: relative;
 }
 
 .row__narrow {
@@ -302,7 +360,7 @@ header .row {
   max-width: 575px;
   margin: 0 auto;
   font-size: 18px;
-  color: slategray;
+ color: rgb(124, 139, 161);
 }
 
 
@@ -310,6 +368,7 @@ header .row {
   .header__img--wrapper {
     display: flex;
     justify-content: flex-end;
+    max-width: 768px;
   }
 }
 
@@ -317,18 +376,29 @@ header .row {
   width: calc(100%-40%)
 }
 
-img {
+@media (max-width: 1280px) {
+  .header__img {
+    max-width: 512px;
+  }
+}
+
+.header__img {
+  display: flex;
+  width: calc(100%-60%);
+}
+
+.img {
   overflow-clip-margin: content-box;
   over: clip;
 }
 
-.features {
+.features__grid {
   display: flex;
   flex-wrap: wrap;
   margin-top: 36px;
 }
 
-.feature {
+.feature__grid {
   width: calc(100% / 3);
 }
 
@@ -346,8 +416,28 @@ img {
 }
 
 .feature__img {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.feature__text {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.feature__title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 16px;
+}
+
+.feature__para {
+  margin-top: 8px;
+  font-size: 16px;
+  max-width: calc(100% / 3);
+  color: rgb(124, 139, 161);
+  line-height: 2;
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
@@ -368,9 +458,7 @@ button {
   font-size: 18px;
 }
 
-.book {
-width: 50%;
-}
+
 }
 
 /* SMALL PHONES, LARGE SMARTPHONES */
