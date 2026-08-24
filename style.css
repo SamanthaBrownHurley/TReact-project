@@ -601,7 +601,7 @@ padding-left: 64px;
   text-transform: uppercase;
 }
 
-.vaules__title {
+.values__title {
   margin-top: 16px;
   margin-bottom: 32px;
   line-height: 1.25;
@@ -616,6 +616,7 @@ padding-left: 64px;
   font-weight: 500;
   color: #7c8ba1;
   line-height: 1.6;
+  margin-bottom: 32px;
 }
 
 .values__list {
@@ -644,11 +645,7 @@ padding-left: 64px;
   background-color: #feb2b2;
 }
 
-.value:nth-of-type(2) {
-  margin-top: 32px;
-} 
-
-.vaule__img--wrapper {
+.value__img--wrapper {
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -657,7 +654,7 @@ padding-left: 64px;
   height: 36px;
 }
 
-.vaule__img {
+.value__img {
   width: 20px;
   height: 20px;
 }
@@ -671,6 +668,7 @@ padding-left: 64px;
 
 .value__para {
   margin-top: 16px;
+  margin-left: 14px;
   line-height: 1.6;
   color: #718096;
 }
