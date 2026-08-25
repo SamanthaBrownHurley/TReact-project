@@ -67,6 +67,11 @@ padding: 80px 24px;
 color: #243e63;
 }
 
+.btn {
+background-color: #6415ff;
+cursor: pointer;
+}
+
 .nav__container {
   width: 100%;
   max-width: 1200px;
@@ -956,7 +961,7 @@ width: calc(100% - 40%);
   left: 0px;
   height: 340px;
   width: 340px;
-  transform: translate(-80px, 128);
+  transform: translate(-80px, 128px);
   color: rgb(80, 17, 204);
   opacity: .5;
 }
@@ -1013,7 +1018,7 @@ width: calc(100% - 40%);
     transition: all 300ms ease;
 }
 
-.last__button:nth-child(2) {
+.last__button:hover:nth-child(2) {
     border: 1px solid rgb(160, 174, 192);
     transition: all 300ms ease;
 }
