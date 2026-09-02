@@ -239,6 +239,7 @@ h3 {
 
 .header__description {
   width: 40%;
+  font-size: 22px;
 }
 
 .header__description--para {
@@ -399,9 +400,11 @@ h3 {
   padding-left: 16px;
 }
 
-.feature__para {
+.features__para {
   margin-top: 8px;
+  padding-left: 16px;
   font-size: 16px;
+  font-weight: 500;
   color: rgb(124, 139, 161);
   line-height: 2;
 }
@@ -514,7 +517,7 @@ padding-left: 64px;
 .step__description {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin-left: 24px;
   max-width: 320px;
 }
 
@@ -528,9 +531,9 @@ padding-left: 64px;
 .step__para {
   font-size: 14px;
   color: #718096;
+  margin-top: 12px;
   font-weight: 500;
   line-height: 2;
-  margin-top: 12px;
 }
 
 /* Values*/
@@ -817,14 +820,19 @@ width: calc(100% - 40%);
   margin-bottom: 20px;
 }
 
-.testimonial__rating i {
-  color: rgb(246, 173, 85);
+.testimonial__rating i, .fa-star {
+  color: rgba(246, 173, 85) !important;
+}
+
+.testimonial__rating {
   margin-right: 2px;
   margin-top: 20px;
 }
 
 .fa-star {
-  color: rgb(246, 173, 85);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 }
 
 .testimonial__title {
