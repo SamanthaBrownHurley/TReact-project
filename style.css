@@ -35,7 +35,7 @@ nav {
 
 img { 
   height: auto;
-  width: auto;
+  width: 100%;
   max-height: 50vh;
 }
 
@@ -272,10 +272,9 @@ h3 {
 .header__email--btn {
   z-index: 2;
   margin: 4px;
-  height: calc(100% - 8px);
   border-radius: 500px;
   width: 160px;
-  padding: 0 16px;
+  padding: 16px;
   border: none;
   background-color: #6415ff;
   color: #fff;
@@ -1412,8 +1411,8 @@ margin-left: 0px;
 
   .header__email--btn {
     width: 100%;
-    padding: 16px 0;
-    margin: 16px 0;
+    padding: 16px;
+    margin: 16px;
     margin-bottom: 0px;
     line-height: 1.5;
   }
@@ -1539,5 +1538,9 @@ margin-left: 0px;
   font-size: 14px;
   text-align: center;
   line-height: 1.5;
+}
+
+@media (max-width:480px) {
+  
 }
 }
